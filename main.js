@@ -1,17 +1,3 @@
-
-
-function box_click(){
-	// if (isGameOver)
-	// 		return;
-
-	// if (!isValid(this)) {
-	// 	// foo
-	// } else {
-	// 	setMark(this, players, curentPlayer)
-	// }
-	this.innerText = "x";
-};		
-
 $(function() {
   var players = ["x" , "O"];
 	var curentPlayer = 0;
@@ -47,7 +33,7 @@ function isGameOver (box, player) {
   }
 
   return false;
-}
+};
 
 
 function isValid (button) {
@@ -56,12 +42,4 @@ function isValid (button) {
 
 function setMark(btn, player) {
   btn.innerText = player;
-}
-
-// $("button").click(function() {
-//   alert( "Handler for .click() called." );
-// });
-
-
-
-
+};
